@@ -7,8 +7,6 @@ import {
   useSelector,
   useDispatch,
   selectCount,
-  incrementAsync,
-  incrementIfOddAsync,
 } from "@/lib/redux";
 
 import { Button, Input, Row } from "antd";
@@ -16,7 +14,6 @@ import { Button, Input, Row } from "antd";
 export const Counter = () => {
   const dispatch = useDispatch();
   const count = useSelector(selectCount);
-  const [incrementAmount, setIncrementAmount] = useState(2);
 
   return (
     <div>
