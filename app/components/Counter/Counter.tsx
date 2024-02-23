@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import {
   counterSlice,
   useSelector,
@@ -9,7 +7,7 @@ import {
   selectCount,
 } from "@/lib/redux";
 
-import { Button, Input, Row } from "antd";
+import { Button, Row } from "antd";
 
 export const Counter = () => {
   const dispatch = useDispatch();
